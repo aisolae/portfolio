@@ -2,47 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="container-fluid">
 <header>
-    <img src="images/cloud.png" alt="cloud1">
+    <div class="row">
+        <div class="col-md-4 offset-md-6">
+            <img alt="cloud1" src="images/cloud.png">
+        </div>
+    </div>
+<!--    <img src="images/cloud.png" alt="cloud1">-->
     <h1>I'm Abisoye</h1>
     <h2>a <span>pro</span>grammer</h2>
-    <img src="images/cloud.png" alt="cloud2">
+    <div class="row">
+        <div class="col-md-4 offset-md-2">
+            <img alt="cloud1" src="images/cloud.png">
+        </div>
+    </div>
     <div>
         <img src="images/mountain.png" alt="mountain">
     </div>
 </header>
-<div >
-    <img src="images/picture.jpg" alt="profile_picture" >
+<div class="w-50 mx-auto">
+    <img alt="profile_picture" src="images/picture.jpg">
     <h2>Hello.</h2>
-    <p class="intro">I am a Mobile and web Developer. I am the founder and CTO of Sabedoria.Team. I❣️coffee and make my own Sandwishes</p>
+    <p>I am a Mobile and web Developer. I am the founder and CTO of Sabedoria.Team. I❣️coffee and make my own Sandwishes</p>
 </div>
 <hr>
-<div class="skills">
+<div>
     <h2>My Skills</h2>
-    <div class="skills-row">
-        <img src="images/computer.png" alt="cloud" class="cloud" >
+    <div class="row skills-row offset-md-1">
+        <div class="col-4  d-flex justify-content-end">
+            <img alt="cloud" class="rounded-circle w-50" src="images/computer.png">
+        </div>
+        <div class="col-5">
             <h3>Design & Development</h3>
             <p>I started learning how to code few years ago because i was curious about making my own project. Overtime, i have gained vast amount of experience designing and developing mobile web applications</p>
-    </div>
-    <div class="skills-row">
-        <img src="images/chillies.png" alt="chillies" class="chillies">
-        <h3>Hot Wings Challenge</h3>
-        <p>But my best skills is actually actually making hot wings. I am the undisputed Queen of hot wings Challenges. Ghost peppers and carolina reapers are my favorite snacks</p>
 
+        </div>
+    </div>
+    <div class="row skills-row d-flex justify-content-center ml-4">
+        <div class="col-5 offset-md-2">
+            <h3>Hot Wings Challenge</h3>
+            <p>But my best skills is actually actually making hot wings. I am the undisputed Queen of hot wings Challenges. Ghost peppers and carolina reapers are my favorite snacks</p>
+        </div>
+        <div class="col-4 ">
+            <img alt="chillies" class="rounded-circle w-50" src="images/chillies.png">
+            </div>
     </div>
 </div>
+
+
+
+
+
 <hr>
-<div class="outro">
+<div class="">
     <h2>Get In Touch</h2>
     <h3>If you love hot wings as much as i do.</h3>
     <p>love hot wings as much as i do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
-    <button>CONTACT ME</button>
+<!--FIXME: add a color, padding on the button-->
+    <button  class="btn btn-success btn-lg mb-5 px-2" type="button">CONTACT ME</button>
 </div>
 <footer>
     <nav>
